@@ -5,4 +5,3 @@ export declare class MyLibModule {
     static ɵmod: i0.ɵɵNgModuleDeclaration<MyLibModule, [typeof i1.MyLibComponent], never, [typeof i1.MyLibComponent]>;
     static ɵinj: i0.ɵɵInjectorDeclaration<MyLibModule>;
 }
-//# sourceMappingURL=my-lib.module.d.ts.map

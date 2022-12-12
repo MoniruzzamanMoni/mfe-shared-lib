@@ -1,18 +1,21 @@
 {
-  "name": "my-lib",
-  "version": "0.0.1",
+  "name": "shared-library",
+  "version": "0.0.0",
+  "private": true,
   "peerDependencies": {
-    "@angular/common": "^15.0.0",
-    "@angular/core": "^15.0.0"
+    "@angular/common": "~9.1.12",
+    "@angular/router": "~9.1.12",
+    "@angular/compiler": "~9.1.12",
+    "@angular/platform-browser": "~9.1.12",
+    "@angular/platform-browser-dynamic": "~9.1.12",
+    "@angular/core": "~9.1.12",
+    "zone.js": "~0.10.2"
   },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
-  "module": "fesm2015/my-lib.mjs",
-  "es2020": "fesm2020/my-lib.mjs",
-  "esm2020": "esm2020/my-lib.mjs",
-  "fesm2020": "fesm2020/my-lib.mjs",
-  "fesm2015": "fesm2015/my-lib.mjs",
+  "module": "fesm2015/shared-library.mjs",
+  "es2020": "fesm2020/shared-library.mjs",
+  "esm2020": "esm2020/shared-library.mjs",
+  "fesm2020": "fesm2020/shared-library.mjs",
+  "fesm2015": "fesm2015/shared-library.mjs",
   "typings": "index.d.ts",
   "exports": {
     "./package.json": {
@@ -20,15 +23,15 @@
     },
     ".": {
       "types": "./index.d.ts",
-      "esm2020": "./esm2020/my-lib.mjs",
-      "es2020": "./fesm2020/my-lib.mjs",
-      "es2015": "./fesm2015/my-lib.mjs",
-      "node": "./fesm2015/my-lib.mjs",
-      "default": "./fesm2020/my-lib.mjs"
+      "esm2020": "./esm2020/shared-library.mjs",
+      "es2020": "./fesm2020/shared-library.mjs",
+      "es2015": "./fesm2015/shared-library.mjs",
+      "node": "./fesm2015/shared-library.mjs",
+      "default": "./fesm2020/shared-library.mjs"
     }
   },
   "sideEffects": false,
-  "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
+  "dependencies": {
+    "tslib": "^2.3.0"
   }
 }

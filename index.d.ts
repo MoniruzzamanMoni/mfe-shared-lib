@@ -1,6 +1,5 @@
 /**
  * Generated bundle index. Do not edit.
  */
-/// <amd-module name="my-lib" />
+/// <amd-module name="shared-library" />
 export * from './public-api';
-//# sourceMappingURL=my-lib.d.ts.map
